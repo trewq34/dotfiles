@@ -8,3 +8,5 @@
 eval "$(starship init zsh)"
 
 eval "$(pyenv virtualenv-init -)"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
