@@ -4,6 +4,7 @@
 [[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
 [[ -f ~/.zsh/shell.zsh ]] && source ~/.zsh/shell.zsh
 [[ -f ~/.zsh/key-bindings.zsh ]] && source ~/.zsh/key-bindings.zsh
+[[ -f ~/.zsh/history.zsh ]] && source ~/.zsh/history.zsh
 
 eval "$(starship init zsh)"
 
