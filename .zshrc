@@ -5,6 +5,7 @@
 [[ -f ~/.zsh/shell.zsh ]] && source ~/.zsh/shell.zsh
 [[ -f ~/.zsh/key-bindings.zsh ]] && source ~/.zsh/key-bindings.zsh
 [[ -f ~/.zsh/history.zsh ]] && source ~/.zsh/history.zsh
+[[ -f ~/.zsh/goenv.zsh ]] && source ~/.zsh/goenv.zsh
 
 eval "$(starship init zsh)"
 
