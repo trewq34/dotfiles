@@ -46,6 +46,8 @@ setopt hist_verify
 
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+bindkey '^[[1;3C' forward-word
+bindkey '^[[1;3D' backward-word
 
 alias ls='eza --icons=always --color=always'
 alias cat='bat --paging=never'
