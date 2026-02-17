@@ -1,0 +1,83 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "auto_install_extensions": {
+    "html": true,
+    "sql": true,
+    "opencode": true,
+    "mcp-server-context7": true,
+    "vscode-icons": true,
+    "fleet-themes": true,
+  },
+  "icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
+  "agent_buffer_font_size": 16.0,
+  "agent_ui_font_size": 18.0,
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "",
+      },
+    },
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "preview_tabs": {
+    "enabled": true,
+  },
+  "tab_bar": {
+    "show": true,
+  },
+  "tabs": {
+    "close_position": "left",
+    "file_icons": true,
+  },
+  "vertical_scroll_margin": 8.0,
+  "minimap": {
+    "show": "never",
+  },
+  "scrollbar": {
+    "axes": {
+      "vertical": true,
+    },
+  },
+  "hover_popover_delay": 250,
+  "current_line_highlight": "line",
+  "cursor_shape": "bar",
+  "cursor_blink": false,
+  "buffer_font_fallbacks": [
+    "SF Mono",
+    "Droid Sans Mono",
+    "monospace",
+    "Droid Sans Fallback",
+  ],
+  "buffer_font_family": "Geist Mono",
+  "file_types": {
+    "json": [".env.json"],
+  },
+  "colorize_brackets": true,
+  "linked_edits": true,
+  "show_whitespaces": "trailing",
+  "show_edit_predictions": true,
+  "indent_guides": {
+    "enabled": true,
+  },
+  "wrap_guides": [80],
+  "base_keymap": "VSCode",
+  "ui_font_size": 18.0,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Fleet Dark",
+  },
+  "show_wrap_guides": false,
+}
