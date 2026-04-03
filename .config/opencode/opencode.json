@@ -6,9 +6,13 @@
     "cc-safety-net@latest",
     "envsitter-guard@latest",
     "@slkiser/opencode-quota@latest",
-    "superpowers@git+https://github.com/obra/superpowers.git"
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "opencode-cursor-oauth@latest"
   ],
   "provider": {
+    "cursor": {
+      "name": "Cursor"
+    },
     "google": {
       "models": {
         "antigravity-gemini-3-pro": {
