@@ -1,13 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-openagent/master/assets/oh-my-opencode.schema.json",
-  "google_auth": false,
-  "runtime_fallback": true,
   "agents": {
     "sisyphus": {
       "model": "google/antigravity-claude-opus-4-6-thinking",
       "variant": "max",
       "fallback_models": [
-        "cursor/claude-4.6-opus-max-thinking",
+        "cursor-acp/claude-4.6-opus-max-thinking",
         {
           "model": "opencode/claude-opus-4-6",
           "variant": "max"
@@ -18,7 +16,7 @@
       "model": "openai/gpt-5.4",
       "variant": "medium",
       "fallback_models": [
-        "cursor/gpt-5.4-medium",
+        "cursor-acp/gpt-5.4-medium",
         {
           "model": "opencode/gpt-5.4",
           "variant": "medium"
@@ -29,7 +27,7 @@
       "model": "openai/gpt-5.4",
       "variant": "high",
       "fallback_models": [
-        "cursor/gpt-5.4-high",
+        "cursor-acp/gpt-5.4-high",
         {
           "model": "opencode/gpt-5.4",
           "variant": "high"
@@ -46,7 +44,7 @@
       "model": "openai/gpt-5.4",
       "variant": "medium",
       "fallback_models": [
-        "cursor/gpt-5.4-medium",
+        "cursor-acp/gpt-5.4-medium",
         {
           "model": "opencode/gpt-5.4",
           "variant": "medium"
@@ -57,7 +55,7 @@
       "model": "google/antigravity-claude-opus-4-6-thinking",
       "variant": "max",
       "fallback_models": [
-        "cursor/claude-4.6-opus-max-thinking",
+        "cursor-acp/claude-4.6-opus-max-thinking",
         {
           "model": "opencode/claude-opus-4-6",
           "variant": "max"
@@ -68,7 +66,7 @@
       "model": "google/antigravity-claude-opus-4-6-thinking",
       "variant": "max",
       "fallback_models": [
-        "cursor/claude-4.6-opus-max-thinking",
+        "cursor-acp/claude-4.6-opus-max-thinking",
         {
           "model": "opencode/claude-opus-4-6",
           "variant": "max"
@@ -79,7 +77,7 @@
       "model": "openai/gpt-5.4",
       "variant": "xhigh",
       "fallback_models": [
-        "cursor/gpt-5.4-xhigh",
+        "cursor-acp/gpt-5.4-xhigh",
         {
           "model": "opencode/gpt-5.4",
           "variant": "xhigh"
@@ -89,14 +87,14 @@
     "atlas": {
       "model": "google/antigravity-claude-sonnet-4-6",
       "fallback_models": [
-        "cursor/claude-4.6-sonnet-medium",
+        "cursor-acp/claude-4.6-sonnet-medium",
         "opencode/claude-sonnet-4-6"
       ]
     },
     "sisyphus-junior": {
       "model": "google/antigravity-claude-sonnet-4-6",
       "fallback_models": [
-        "cursor/claude-4.6-sonnet-medium",
+        "cursor-acp/claude-4.6-sonnet-medium",
         "opencode/claude-sonnet-4-6"
       ]
     }
@@ -106,7 +104,7 @@
       "model": "google/antigravity-gemini-3.1-pro",
       "variant": "high",
       "fallback_models": [
-        "cursor/gemini-3.1-pro-high",
+        "cursor-acp/gemini-3.1-pro-high",
         {
           "model": "opencode/gemini-3.1-pro",
           "variant": "high"
@@ -117,7 +115,7 @@
       "model": "openai/gpt-5.4",
       "variant": "xhigh",
       "fallback_models": [
-        "cursor/gpt-5.4-xhigh",
+        "cursor-acp/gpt-5.4-xhigh",
         {
           "model": "opencode/gpt-5.4",
           "variant": "xhigh"
@@ -125,17 +123,17 @@
       ]
     },
     "deep": {
-      "model": "openai/gpt-5.3-codex",
+      "model": "openai/gpt-5.4",
       "variant": "medium",
       "fallback_models": [
-        "cursor/gpt-5.3-codex-medium"
+        "cursor-acp/gpt-5.4-medium"
       ]
     },
     "artistry": {
       "model": "google/antigravity-gemini-3.1-pro",
       "variant": "high",
       "fallback_models": [
-        "cursor/gemini-3.1-pro-high",
+        "cursor-acp/gemini-3.1-pro-high",
         {
           "model": "opencode/gemini-3.1-pro",
           "variant": "high"
@@ -145,34 +143,39 @@
     "quick": {
       "model": "openai/gpt-5.4-mini",
       "fallback_models": [
-        "cursor/gpt-5.4-mini",
+        "cursor-acp/gpt-5.4-mini",
         "opencode/gpt-5.4-mini"
       ]
     },
     "unspecified-low": {
       "model": "google/antigravity-claude-sonnet-4-6",
       "fallback_models": [
-        "cursor/claude-4.6-sonnet-medium",
+        "cursor-acp/claude-4.6-sonnet-medium",
         "opencode/claude-sonnet-4-6"
       ]
     },
     "unspecified-high": {
       "model": "google/antigravity-claude-sonnet-4-6",
       "fallback_models": [
-        "cursor/claude-4.6-sonnet-medium",
+        "cursor-acp/claude-4.6-sonnet-medium",
         "opencode/claude-sonnet-4-6"
       ]
     },
     "writing": {
       "model": "google/antigravity-gemini-3-flash",
       "fallback_models": [
-        "cursor/gemini-3-flash",
+        "cursor-acp/gemini-3-flash",
         "opencode/gemini-3-flash"
       ]
     }
   },
+  "google_auth": false,
+  "runtime_fallback": true,
   "git_master": {
     "commit_footer": false,
     "include_co_authored_by": false
-  }
+  },
+  "_migrations": [
+    "model-version:openai/gpt-5.3-codex->openai/gpt-5.4"
+  ]
 }
